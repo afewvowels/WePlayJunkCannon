@@ -1,0 +1,127 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.3.10
+Date: 2026-11-08
+  Changes:
+    - Junk Shells now stay inside the Junk Cannon. Inserters and loaders can't take them out,
+      shells taken out by hand go back into the cannon, and mining a cannon deletes its shells
+      instead of giving them to the player or robot.
+    - Junk Shells left on the ground or in player inventories by older versions are removed.
+  Bugfixes:
+    - Fixed the cannon head disappearing when mining a Junk Cannon failed because the inventory
+      was full.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.8
+Date: 2026-11-08
+  Graphics:
+    - Junk Cannon ghosts (blueprints, copy-paste, undo) now show the cannon head.
+  Sounds:
+    - Firing sound is quieter.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.7
+Date: 2026-11-08
+  Bugfixes:
+    - Fixed full Junk Cannons dropping a shell on the ground (marked for deconstruction) every time
+      the mod was updated or changed.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.6
+Date: 2026-11-08
+  Graphics:
+    - Animated flames inside the furnace window while baking shells.
+    - Softer, warmer window glow.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.5
+Date: 2026-11-08
+  Graphics:
+    - The Junk Cannon now sits lower, level with other buildings.
+  Sounds:
+    - Firing sound is quieter.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.4
+Date: 2026-11-08
+  Graphics:
+    - Brighter furnace window glow, rendered from the model.
+  Sounds:
+    - Shortened the cannon firing sound to 1.5 seconds with a fade-out.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.3
+Date: 2026-11-08
+  Graphics:
+    - The Junk Cannon is drawn a bit smaller.
+  Sounds:
+    - New cannon firing sound.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.2
+Date: 2026-11-08
+  Graphics:
+    - Replaced the gun turret muzzle flash with a puff of smoke at the base of the barrel.
+    - The alt-mode ammo icon no longer covers the furnace window.
+  Sounds:
+    - New cannon firing sound.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: 2026-11-08
+  Graphics:
+    - The Junk Cannon is drawn smaller so it fits its 2x2 footprint better.
+    - The muzzle flash now appears at the end of the barrel instead of in the middle of the turret.
+    - The alt-mode shell icon no longer covers the furnace window.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2026-11-08
+  Graphics:
+    - New, taller cannon model with re-rendered head and base.
+    - Added shadows for the cannon head and the furnace base.
+    - New window glow to match the new base.
+    - New thumbnail.
+  Changes:
+    - The mod is out of alpha.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.4
+Date: 2026-11-04
+  Features:
+    - Added a "Fuel can be used as junk" startup setting (off by default).
+  Changes:
+    - Fuel items are no longer baked into shells by default, so inserters feeding from a mixed chest
+      or belt keep coal in the burner and use the other items as junk.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+Date: 2026-11-04
+  Bugfixes:
+    - Fixed the furnace base drawing on top of the cannon head.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+Date: 2026-11-04
+  Graphics:
+    - New rendered furnace base, replacing the stone furnace graphics.
+    - The furnace window glows and flickers while baking shells.
+    - New item icon.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 2026-11-04
+  Graphics:
+    - New rendered cannon head with 64 directions.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2026-11-04
+  Major Features:
+    - First public alpha.
+  Features:
+    - Startup settings for shell damage, fire cooldown, range and bake time.
+    - Shots now have a muzzle flash and hit sparks.
+    - Works on Space Age space platforms (platform build and mine events).
+  Changes:
+    - The hidden cannon is no longer invulnerable. Damage it takes is passed to the furnace,
+      so enemies can no longer get stuck attacking an unkillable turret.
+    - The 10-shell buffer now uses the furnace's own "Output full" stop instead of pausing it by script.
+    - Mining a Junk Cannon returns the shell chambered in the cannon.
+    - Inserters can no longer put shells straight into the hidden cannon.
+    - Junk recipes now cover every item type the game knows, and skip parameter items.
+  Bugfixes:
+    - Furnaces paused by 0.1.x scripts are un-paused when loading an old save.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 2026-11-03
+  Changes:
+    - Rebuilt as a native burner furnace with a hidden ammo turret. Old chest cannons are migrated.
+  Bugfixes:
+    - Updated to Factorio 2.1 APIs: crafter_input/crafter_output inventories, recipe categories,
+      and disabled_by_script.

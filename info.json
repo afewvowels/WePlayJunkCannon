@@ -1,0 +1,11 @@
+{
+  "name": "WePlayJunkCannon",
+  "version": "0.3.10",
+  "title": "WePlay: Junk Cannon",
+  "author": "WePlay",
+  "factorio_version": "2.1",
+  "dependencies": [
+    "base >= 2.1.0"
+  ],
+  "description": "An early-game burner turret: a furnace with a cannon on top. Feed it any item, from any mod, and it bakes the junk into shells and fires them at enemies."
+}
