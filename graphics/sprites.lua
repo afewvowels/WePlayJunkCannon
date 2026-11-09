@@ -21,8 +21,8 @@ return {
   },
   base_shadow = {
     filename = "__WePlayJunkCannon__/graphics/junk-cannon-base-shadow.png",
-    width = 292, height = 139,
-    shift = {0.7969, -0.2266},
+    width = 291, height = 139,
+    shift = {0.7891, -0.2266},
     draw_as_shadow = true,
   },
 }
